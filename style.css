@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3%;
+    padding: 0px 5%;
+}
+#nav h4{
+    font-size: 3vh;
+    font-weight: 550;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+
+#center{
+    width:100%;
+    padding: 20px 40px;
+    padding-left: 8%;
+    /*background-color: aqua;*/
+}
+#center h1{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 548;
+}
+
+#center-in{
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 3vh;
+    font-weight: 550;
+    margin-top: 25px;
+}
+
+#right{
+    width: 20%;
+    padding-top: 10px;
+}
+
+.elem{
+    margin: 5px;
+    padding: 9px 0px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.8vh;
+    font-weight: 500;
+}
+.elem i{
+    font-size: 3.5vh;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover a{
+    text-decoration: underline;
+}
+
+
+#bottom{
+    height: 37.8%;
+    background-color: antiquewhite;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1483048803/photo/secret-woman-with-curly-hair-covers-eyes-wears-spectacles-waits-for-surprise-dressed-in-black.jpg?s=2048x2048&w=is&k=20&c=Gc6Zt3q4oWuAL93_OZ3SdapT6c_giAKapzDrijbW9ws=);
+    background-size: cover;
+    background-position: 0 26%;
+}
+
+@media(max-width:600px){
+    #nav{
+        gap: 6%;
+        padding: 0px 5%;
+    }
+
+    #nav h4{
+        font-size: 2.5vh;
+        font-weight: 550;
+    }
+    #nav i{
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        border-radius: 50%;
+        padding: 6px;
+    }
+
+    #center h1{
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 550;
+    }
+
+    #center-in p{
+        font-size: 2vh;
+        font-weight: 530;
+        text-align: left;
+        margin-top: 4px;
+    }
+
+    #center-in{
+        padding: 0 8%;
+        display: block;  
+    }
+
+    #right{
+        width: 100%;
+        display: block;
+        padding: 0px;
+        margin-top:8%;
+    }
+
+    .elem{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding:2px;
+        border-top: 2px solid black;
+        border-bottom: none;
+    }
+
+    #bottom{
+        height: 35.2%;
+        background-color: antiquewhite;
+        width: 100%;
+        background-image: url(https://media.istockphoto.com/id/1483048803/photo/secret-woman-with-curly-hair-covers-eyes-wears-spectacles-waits-for-surprise-dressed-in-black.jpg?s=2048x2048&w=is&k=20&c=Gc6Zt3q4oWuAL93_OZ3SdapT6c_giAKapzDrijbW9ws=);
+        background-size: cover;
+        background-position: 0 26%;
+    }
+}
